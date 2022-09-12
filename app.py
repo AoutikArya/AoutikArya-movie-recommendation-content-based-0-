@@ -2,8 +2,7 @@
 import streamlit as st
 import joblib
 import requests
-from urllib.request
-import urlopen
+
 
 st.title('Movie Recommendation System')
 
@@ -31,8 +30,7 @@ movie_poster=[]
 
 movie_selected = st.selectbox('Select a movie',(new_df['title'].values))
 
-similarity = joblib.load(urlopen("https://drive.google.com/file/d/15V8uSdHisS4dSUSs1-8sSYqKc7jG-QU7/view?usp=sharing"))
-#similarity=joblib.load('similarity.pkl')
+similarity=joblib.load('similarity.pkl')
 
 if st.button("Recommend"):
     recomm,id=recommend(movie_selected)
