@@ -1,3 +1,6 @@
+@settings {
+  font-size: 100;
+}
 ##How to run app?
 git clone repo and run app.py
 Due to large size of similarity.pkl (1.7GB) i have uploaded that in my Gdrive just download that and paste it into the git clone folder
